@@ -11,7 +11,7 @@
     <body>
         <div class="contenedor">
             <header>
-                <a href="#" class="logo">Desarrollador .Net</a>
+                <a href="#" class="logo">Desarrollo en .Net</a>
                 <nav class="menu">
                     <a href="#">Inicio</a>
                     <a href="#">Sobre mi</a>
@@ -22,15 +22,45 @@
                 <div class="contenedor-img">
                     <img src="./img/draw.svg" alt="imágen">                    
                 </div>
-                <div class="contenedor-texto">
-                    <h1>Carlos Enrique Herrera López</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos nesciunt possimus sint?</p>
+                <div class="contenedor-texto">                    
+                    <!-- Forma 1: (20.00)
+                    Esta forma es muy útil y funcional, pero tiene el defecto de que al momento de indexarlo en los buscadores
+                    el texto aparecerá en blanco o no aparecera y este es un error -->
+                    <!-- <h2 class="titulo">Mi nombre es:<br/><span class="typed-name"></span></h2> -->
+                    <!-- <p>Desarrollador de software, encantado de poder ayudarte a hacer realidad tu proyecto.</p> -->
+                    <!-- <p><b>Tengo habilidades en:</b><br/><span class="typed"></span></p> -->
+
+                    <!-- Forma 2: (22.00) -->
+                    <!-- Esta forma ayudará a evitar el error y ahora los buscadores podrán indexar el contenido  -->
+                    
+                    <!-- <h1>Mi nombre es:</h1> -->
+
+                    <h2 class="titulo">
+                        <span class="typed-name"></span>
+                    </h2>
+                    
+                    <div class="titulo" id="cadenas-texto">
+
+                        <p>Mi nombre es: <br/><i class="name">Carlos Enrique</i></p>
+                        <p>Mi nombre es: <br/><i class="name">Herrera López.</i></p>
+                        <p>Soy: <br/><i class="name">Desarrollador de Software.</i></p>
+                        <p><i class="msj">¿LISTO PARA HACER TU PROYECTO REALIDAD?</i></p>
+                        <!-- <p><i class="name">Herrera López.</i></p> -->
+                        <!-- <p>Mi nombre es: <br><i class="mascota">CadHerrera</i></p> -->
+                        <!-- <p><b>Tengo habilidades en:</b><br/><span class="typed"></span></p> -->
+                    </div>
+
+                    <p>Encantado de poder ayudarte a hacer realidad tu proyecto.</p>
+
                     <a href="#" class="btn-link activo">Servicios</a>
                 </div>
             </main>
         </div>
 
-        <script src="./js/main.js"></script>
+        <!-- Importar primero el códgo de la librería para que luego se carge el js completamente -->
+        <!-- Este es todo un CDN -->
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="./js/main.js"></script>
+        
     </body>
 </html>
