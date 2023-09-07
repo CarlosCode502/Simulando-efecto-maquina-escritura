@@ -82,7 +82,7 @@ main .contenedor-img {
 }
 
 .contenedor-texto .titulo {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: normal;
     margin-bottom: 40px;
 }
@@ -96,14 +96,28 @@ main .contenedor-img {
 
 .contenedor-texto .msj{
     font-weight: bold;
-    color: #5b4a9a;
+    color: #785bdf;
     font-style: normal;   
+    animation: parpadear 3s infinite backwards;
+    transition: .5s ease-in-out all;
+}
+
+/* .flicker{
+    animation: parpadear 2s infinite backwards;
+} */
+
+@keyframes parpadear{
+    to{
+        color: #5630e0;
+        text-shadow: 0 0 12px;
+    }
 }
  
 .contenedor-texto p {
     margin-top: 40px;
     margin-bottom: 40px;    
     line-height: 36px;
+    /* font-weight: bolder; */
 }
 
 .btn-link {
@@ -131,9 +145,17 @@ main .contenedor-img {
          margin-bottom: 40px;
     }
 
-    /* .contenedor-texto .titulo {
-        font-size: 20px;
+    .logo {
+        text-transform: uppercase;
+       font-size: 26px;
+        font-weight: 600;
+        color: #000;
+       text-decoration: none;
+    }
+
+    .contenedor-texto .titulo {
+        font-size: 30px;
         font-weight: normal;
-        margin-bottom: 40px;
-    } */
+        margin-bottom: 30px;
+    }
 }
